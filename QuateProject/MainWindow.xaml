@@ -1,0 +1,25 @@
+﻿<Window x:Class="QuateProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuateProject"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="595.836" Width="909.5">
+    <Grid Margin="0,0,-8,-8" Height="573" VerticalAlignment="Top">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFD7B3D8" Offset="0"/>
+                <GradientStop Color="#FF7A317E" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBlock x:Name="lblQuate"  FontFamily="Arial Unicode MS" FontSize="24" Text="Цитата" TextWrapping="Wrap" Margin="10,10,10,352" Foreground="White" FontWeight="Bold" FontStyle="Italic"/>
+        <Button x:Name="btnGetQuate"  Content="Получить цитату" FontFamily="Arial Unicode MS" FontSize="20" Margin="10,454,0,0" Click="btnGetQuate_Click" Background="#FF919BB0" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Width="244" Height="61" VerticalAlignment="Top" BorderBrush="{x:Null}"/>
+        <Button Content="Добавить в избранное" HorizontalAlignment="Left" Margin="259,454,0,0" VerticalAlignment="Top" Width="269" Height="61" Click="Button_Click_1" FontSize="20" Background="#FF919BB0" Foreground="White" FontWeight="Bold" BorderBrush="{x:Null}" FontFamily="Arial Unicode MS"/>
+        <TextBlock x:Name="lblAutor"  FontFamily="Arial Unicode MS" FontSize="24" Text="Автор" TextWrapping="Wrap" Margin="10,226,0,256" Foreground="White" FontWeight="Bold" FontStyle="Italic" />
+        <TextBlock x:Name="lblLink"  FontFamily="Arial Unicode MS" FontSize="24" Text="Источник" TextWrapping="Wrap" Margin="10,340,0,152" Foreground="White" FontWeight="Bold"/>
+        <Button Content="Показать избранное" HorizontalAlignment="Left" Margin="533,454,0,0" VerticalAlignment="Top" Width="241" Click="Button_Click" Height="61" FontSize="20" Background="#FF919BB0" Foreground="White" FontWeight="Bold" BorderBrush="{x:Null}" FontFamily="Arial Unicode MS"/>
+        <Button Content="Выход" HorizontalAlignment="Left" Margin="779,454,0,0" VerticalAlignment="Top" Width="121" Height="61" Background="#FF919BB0" FontFamily="Arial Unicode MS" FontSize="20" Foreground="White" Click="Button_Click_2"/>
+    </Grid>
+</Window>
+
